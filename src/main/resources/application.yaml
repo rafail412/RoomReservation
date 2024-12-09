@@ -1,0 +1,14 @@
+\spring:
+  application:
+    name: room-reservation
+  datasource:
+    password: password
+    url: jdbc:postgresql://${DB_HOSTNAME:localhost}:${DB_PORT:5432}/postgres
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+server:
+  port: 9090
+
